@@ -61,12 +61,18 @@ body{
 }
 /* end left sidebar */
 
+/* End Left Sidebar Section*/
+
+/* Start Top Sidebar Section */
 /* start top side bar */
 .topnavbars{
     background-color: var(--primary-color);
 }
 .iconparents{
     position: relative;
+}
+.iconbullets i{
+    color: #888;
 }
 .iconbullets::after{
     content: '';
@@ -79,7 +85,24 @@ body{
     left: 20px;
     top: 5px;
 }
+.breadcrumb a{
+    color: #f4f4f4;
+}
 /* end top side bar */
+/* Start Top Sidebar Section */
 
-/* End Left Sidebar Section*/
+/* Start Content Section */
+.cardboxs{
+    transition: all 0.3s;
+}
+.cardboxs:hover{
+    box-shadow: 1px 3px 3px #bbb;
+    transform: translateY(-1px);
+}
+/* End Content Section */
 
+/* Start Users Permission */
+.borderends{
+    border-right: 3px solid skyblue;
+}
+/* End Users Permission */
