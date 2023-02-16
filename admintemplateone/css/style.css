@@ -105,4 +105,25 @@ body{
 .borderends{
     border-right: 3px solid skyblue;
 }
+/* start pagination */
+.pagination>li>a,.pagination>li>span{
+    color: #000;
+    border: 1px solid silver;
+}
+.pagination>li.active>a{
+    background-color: grey;
+    border: 1px solid grey;
+    color: #fff;
+}
+.pagination>li>a:hover,
+.pagination>li>span:hover{
+    background-color: #eee;
+    color: #000;
+    border-color: #ddd;
+}
+
+/* end pagination */
+
+
 /* End Users Permission */
+
