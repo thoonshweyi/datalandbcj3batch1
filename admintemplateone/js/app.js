@@ -21,6 +21,13 @@ $(document).ready(function(){
         }
     });
     // End Users Permission
+
+    //Start Quick Sales
+    $("#datepicker").datepicker(
+      {
+        numberOfMonths:3
+      }
+    );
 });
 
 
@@ -70,4 +77,30 @@ function drawTitleSubtitle() {
     }
 // End Viewer Report
 
+// Start Sale Analysis
+//chartjs.org
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut', //bar, pie, line, doughnut, radar, polararea, scatter
+    data: {
+      labels: ['Cash', 'Visa', 'MPU', 'Mobile Banking'],
+      datasets: [{
+        // label: '# of Votes',
+        data: [40, 10, 20, 30],
+        // borderWidth: 1
+      }]
+    },
+    
+  });
+// End Sale Analysis
+
+// Start Footer
+const getyear = document.getElementById('getyear');
+const getfullyear = new Date().getFullYear();
+getyear.textContent = getfullyear;
+// End Footer
+
 // Javascript Area
+
+// 17GG

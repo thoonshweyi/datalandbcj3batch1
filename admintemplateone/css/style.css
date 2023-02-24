@@ -13,6 +13,48 @@ body{
     padding: 0;
     margin: 0;
 }
+/* Start Site Setting */
+.sitesettings{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sitesettings .sitesettings-item{
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin: 10px 0;
+    opacity: 0.5;
+}
+.sitesettings .sitesettings-item{
+    opacity: 1;
+}
+.ani-rotates{
+    animation-name: myanirotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes myanirotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(1turn);
+    }
+}
+/* End Site Setting */
+
 .lines1,.lines2,.lines3{
     width: 25px;
     height: 3px;
@@ -58,6 +100,14 @@ body{
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+}
+@media (max-width:768px) {
+    .sidebars{
+        position: static;
+    }
+    .topnavbars{
+        position: static;
+    }
 }
 /* end left sidebar */
 
@@ -126,4 +176,12 @@ body{
 
 
 /* End Users Permission */
+
+/* Start Quick Sales */
+#datepicker{
+    overflow-x: scroll;
+}
+/* End Quick Sales */
+
+
 
